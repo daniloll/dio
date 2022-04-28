@@ -1,5 +1,5 @@
 # Repositorio DIO :octocat:
-Este reposítorio contem dados referentes a estudos e projeto durante estudos na DIO 
+Este reposítorio contem dados referentes a estudos e projetos durante treinamentos DIO 
 
 ## Estudos
 - Java
