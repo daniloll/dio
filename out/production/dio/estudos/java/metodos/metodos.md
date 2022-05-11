@@ -3,17 +3,63 @@
 ## 1. Métodos
 
 - O que são?
-- Como podemos usar?
-- Tipos
-- Sobrecargas
-- Retornos
+- Anatomia de um Método em Java?
+- Sobrecarga
+- Retorno
+
+
 
 
 - **O que são?**
 
-Em linguagem de programação, como Java, uma variável é sinônimo de espaço em memória. Imagine a memória do seu
-computador, se separarmos uma certa quantidade de memória para armazenarmos números, nomes ou outro tipo de dado
-e batizarmos ela com um nome; essa quantidade de memória reservada e nomeada é um exemplo de uma variável.
-Alem disto, esse nome variável não é atoa, quer dizer que esse espaço de memória pode ser preenchida por valores
-diferentes em outros momentos
+Podemos dizer que um Metodo é uma parte, bem definida, do código, responsável por uma atividade específica.
+Ele deve pertencer a uma classe e devem refletir uma  acao ou comportamento desta classe, ou seja, um método
+é uma sub-parte do código que tem uma competencia.
 
+``` 
+Em linguagens de Paradigma Estrutural, como Pascal e C por exemplo, a entidade que possui características semelhantes
+aos métodos são as funções, estas são pequenas partes do código com um propósito bem definido.
+```
+
+- **Anatomia de um Método em Java**
+
+```
+1 [visibilidade] [modificador de acesso] [tipo de retorno] [nome] ( [parametros] )
+2 {
+3   [corpo do método]
+4 }
+```
+Importante ressaltar que quando nos referirmos a assinatura de um método, estamos nos referindo apenas ao seu nome
+e seus parâmetros.
+
+Onde:
+
+[visibilidade] pode ser: public, protected, private
+
+[modificador de acesso] pode ser: abstract
+
+[tipo de retorno] pode ser: qualquer tipo de dado em Java
+
+[nome]: poder ser qualquer um definido como padrão ja estudado
+
+[parametros] pode ser qualquer dupla tipo + variável
+
+[exceções] pode ser: definida pelo usuário ou já definidas
+
+Exemplos de Métodos em Java
+
+```
+1 int calculaQuadradoDeDois()
+2 {
+3   return 2*2;
+4 }
+```
+
+```
+1 double calculaQuadradoDoNumero(double numero)
+2 {
+3   return (numero * numero);
+4 }
+```
+
+- **Sobrecarga**    
