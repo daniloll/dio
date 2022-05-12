@@ -12,6 +12,8 @@ import static estudos.java.metodos.Operacoes.subtrai;
 import static estudos.java.metodos.Operacoes.divide;
 import static estudos.java.metodos.Operacoes.multiplica;
 
+import static estudos.java.metodos.Emprestimo.simulaValorAPagar;
+
 
 public class LabDeMetodos {
 
@@ -19,37 +21,36 @@ public class LabDeMetodos {
 
         double valorBrutoTotal;
 
-        System.out.println("Verificacao dos metodos aritmeticos:");
+        System.out.println("=======================================================================================");
+        System.out.println("                              Exercicio Calculadora                                    ");
+        System.out.println("=======================================================================================");
 
-        System.out.println("Chamada do Método Soma");
         System.out.println(soma(2,2));
-
-        System.out.println("Chamada do Método Substrai");
         System.out.println(subtrai(1024,512));
-
-        System.out.println("Chamada do Método Divide");
         System.out.println(divide(100,2.5));
-
-        System.out.println("Chamada do Método Multiplica");
         System.out.println(multiplica(2.5,4));
 
-        System.out.println("=========================================================");
 
-        System.out.println("Verificacao metodo de calculo de Emprestimo:");
 
-        System.out.println("Valor da contratacao de um emprestimo com:");
-        System.out.println("1) Valor solicitado de 10000");
-        System.out.println("1) Valor solicitado de 10000");
-        System.out.println("1) Valor solicitado de 10000");
+        System.out.println("=======================================================================================");
+        System.out.println("                                  Exercicio Mensagem                                   ");
+        System.out.println("=======================================================================================");
 
-        System.out.println("Valor da contratacao de um emprestimo com:");
-        System.out.println("1) Valor solicitado de 10000");
-        System.out.println("2) Valor da taxa de juros");
-        System.out.println("3) Numero de meses");
+        Mensagem.cumprimentar(3);
+        Mensagem.cumprimentar(9);
+        Mensagem.cumprimentar(15);
+        Mensagem.cumprimentar(19);
 
-        valorBrutoTotal = Emprestimo.simulaValorTotal(10000, 0.12, 12);
-        System.out.println("Valor total:" + Emprestimo.simulaValorTotal(10000, 0.12, 12));
-        System.out.println("Valor prestacao:" + Emprestimo.simulaValorDaPrestacao(valorBrutoTotal, 12));
+
+
+
+        System.out.println("=======================================================================================");
+        System.out.println("                           Exercicio calculo de Emprestimo                             ");
+        System.out.println("=======================================================================================");
+
+        System.out.print("Valor a pagar: R$");
+        System.out.printf("%.2f", simulaValorAPagar(10000, 24));
+
 
     }
 
