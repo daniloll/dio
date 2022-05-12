@@ -17,6 +17,10 @@ public class LabDeMetodos {
 
     public static void main(String[] args){
 
+        double valorBrutoTotal;
+
+        System.out.println("Verificacao dos metodos aritmeticos:");
+
         System.out.println("Chamada do Método Soma");
         System.out.println(soma(2,2));
 
@@ -28,6 +32,24 @@ public class LabDeMetodos {
 
         System.out.println("Chamada do Método Multiplica");
         System.out.println(multiplica(2.5,4));
+
+        System.out.println("=========================================================");
+
+        System.out.println("Verificacao metodo de calculo de Emprestimo:");
+
+        System.out.println("Valor da contratacao de um emprestimo com:");
+        System.out.println("1) Valor solicitado de 10000");
+        System.out.println("1) Valor solicitado de 10000");
+        System.out.println("1) Valor solicitado de 10000");
+
+        System.out.println("Valor da contratacao de um emprestimo com:");
+        System.out.println("1) Valor solicitado de 10000");
+        System.out.println("2) Valor da taxa de juros");
+        System.out.println("3) Numero de meses");
+
+        valorBrutoTotal = Emprestimo.simulaValorTotal(10000, 0.12, 12);
+        System.out.println("Valor total:" + Emprestimo.simulaValorTotal(10000, 0.12, 12));
+        System.out.println("Valor prestacao:" + Emprestimo.simulaValorDaPrestacao(valorBrutoTotal, 12));
 
     }
 
