@@ -32,6 +32,7 @@ public class LabDeMetodos {
 
 
 
+
         System.out.println("=======================================================================================");
         System.out.println("                                  Exercicio Mensagem                                   ");
         System.out.println("=======================================================================================");
@@ -50,6 +51,15 @@ public class LabDeMetodos {
 
         System.out.print("Valor a pagar: R$");
         System.out.printf("%.2f", simulaValorAPagar(10000, 24));
+
+
+        System.out.println("=======================================================================================");
+        System.out.println("                              Exercicio Sobrecarga                                     ");
+        System.out.println("=======================================================================================");
+
+        System.out.println("Area do quadrado: " + Geometria.calculaAreaQuadrilatero(2));
+        System.out.println("Area do quadrado: " + Geometria.calculaAreaQuadrilatero(2,3));
+        System.out.println("Area do quadrado: " + Geometria.calculaAreaQuadrilatero(2,3,5));
 
 
     }
